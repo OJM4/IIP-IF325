@@ -22,10 +22,43 @@ Partial Class Form1
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.btnMostrar = New System.Windows.Forms.Button()
+        Me.cmbEquipos = New System.Windows.Forms.ComboBox()
+        Me.SuspendLayout()
+        '
+        'btnMostrar
+        '
+        Me.btnMostrar.Location = New System.Drawing.Point(49, 78)
+        Me.btnMostrar.Name = "btnMostrar"
+        Me.btnMostrar.Size = New System.Drawing.Size(75, 23)
+        Me.btnMostrar.TabIndex = 3
+        Me.btnMostrar.Text = "Mostrar"
+        Me.btnMostrar.UseVisualStyleBackColor = True
+        '
+        'cmbEquipos
+        '
+        Me.cmbEquipos.FormattingEnabled = True
+        Me.cmbEquipos.Items.AddRange(New Object() {"Motagua", "Real Madrid", "Man United", "Chelsea", "Tontenham", "B. Dortmund"})
+        Me.cmbEquipos.Location = New System.Drawing.Point(31, 32)
+        Me.cmbEquipos.Name = "cmbEquipos"
+        Me.cmbEquipos.Size = New System.Drawing.Size(121, 24)
+        Me.cmbEquipos.TabIndex = 2
+        Me.cmbEquipos.Tag = ""
+        Me.cmbEquipos.Text = "Seleccionar"
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form1"
+        Me.ClientSize = New System.Drawing.Size(273, 146)
+        Me.Controls.Add(Me.btnMostrar)
+        Me.Controls.Add(Me.cmbEquipos)
+        Me.Name = "Form1"
+        Me.Text = "Combobox"
+        Me.ResumeLayout(False)
+
     End Sub
 
+    Friend WithEvents btnMostrar As Button
+    Friend WithEvents cmbEquipos As ComboBox
 End Class
