@@ -34,6 +34,8 @@ Partial Class Validaciones
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.errorValidacion = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.toolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.GroupBox1.SuspendLayout()
         CType(Me.errorValidacion, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -133,6 +135,13 @@ Partial Class Validaciones
         '
         Me.errorValidacion.ContainerControl = Me
         '
+        'toolTip
+        '
+        Me.toolTip.IsBalloon = True
+        '
+        'BackgroundWorker1
+        '
+        '
         'Validaciones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -163,4 +172,6 @@ Partial Class Validaciones
     Friend WithEvents Label1 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents errorValidacion As ErrorProvider
+    Friend WithEvents toolTip As ToolTip
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class
