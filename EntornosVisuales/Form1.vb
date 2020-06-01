@@ -27,4 +27,16 @@
 
     End Sub
 
+    Private Sub SubFormularioToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub ErrorProviderToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub PrincipalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrincipalToolStripMenuItem.Click
+        EntradaTextoMessage.Show()
+        Me.Close()
+    End Sub
 End Class

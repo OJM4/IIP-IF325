@@ -73,6 +73,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcumuladorContador.Designer.vb">
+      <DependentUpon>AcumuladorContador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AcumuladorContador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntradaTextoMessage.Designer.vb">
+      <DependentUpon>EntradaTextoMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EntradaTextoMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +116,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AcumuladorContador.resx">
+      <DependentUpon>AcumuladorContador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntradaTextoMessage.resx">
+      <DependentUpon>EntradaTextoMessage.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form1.resx">
       <DependentUpon>form1.vb</DependentUpon>
     </EmbeddedResource>

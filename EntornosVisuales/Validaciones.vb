@@ -18,20 +18,12 @@ Public Class Validaciones
         End Try
     End Sub
 
-    Private Sub txtProducto_TextChanged(sender As Object, e As EventArgs) Handles txtProducto.TextChanged
-
-    End Sub
-
     Private Sub txtProducto_Validating(sender As Object, e As CancelEventArgs) Handles txtProducto.Validating
         If DirectCast(sender, TextBox).Text.Length > 0 Then
             Me.errorValidacion.SetError(sender, "")
         Else
             Me.errorValidacion.SetError(sender, "Es un campo obligatorio")
         End If
-
-    End Sub
-
-    Private Sub txtPrecio_TextChanged(sender As Object, e As EventArgs) Handles txtPrecio.TextChanged
 
     End Sub
 
