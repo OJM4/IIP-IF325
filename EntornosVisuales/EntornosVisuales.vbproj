@@ -85,6 +85,12 @@
     <Compile Include="EntradaTextoMessage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="entregaMascarillas.Designer.vb">
+      <DependentUpon>entregaMascarillas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="entregaMascarillas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EntradaTextoMessage.resx">
       <DependentUpon>EntradaTextoMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="entregaMascarillas.resx">
+      <DependentUpon>entregaMascarillas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form1.resx">
       <DependentUpon>form1.vb</DependentUpon>
